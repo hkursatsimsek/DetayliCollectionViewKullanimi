@@ -13,8 +13,11 @@ class FilmlerCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var filmFiyatLabel: UILabel!
     @IBOutlet weak var sepeteEkleButton: UIButton!
     
+    var hucreProtokol:HucreProtokol?
+    var indexPath:IndexPath?
+    
     @IBAction func sepeteEkleAction(_ sender: Any) {
-        
+        hucreProtokol?.sepeteEkleTikla(indexPath: indexPath!)
     }
     
 }

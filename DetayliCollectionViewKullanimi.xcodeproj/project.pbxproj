@@ -15,6 +15,8 @@
 		7C79FB8C277386E5008EB9AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C79FB8A277386E5008EB9AD /* LaunchScreen.storyboard */; };
 		7C79FB94277387A6008EB9AD /* Filmler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79FB93277387A5008EB9AD /* Filmler.swift */; };
 		7C79FB9727738D5A008EB9AD /* FilmlerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79FB9627738D5A008EB9AD /* FilmlerCollectionViewCell.swift */; };
+		7C79FB9927739B3D008EB9AD /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79FB9827739B3D008EB9AD /* Protocols.swift */; };
+		7C79FB9B2773A018008EB9AD /* DetayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79FB9A2773A018008EB9AD /* DetayVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		7C79FB8D277386E5008EB9AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C79FB93277387A5008EB9AD /* Filmler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filmler.swift; sourceTree = "<group>"; };
 		7C79FB9627738D5A008EB9AD /* FilmlerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmlerCollectionViewCell.swift; sourceTree = "<group>"; };
+		7C79FB9827739B3D008EB9AD /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		7C79FB9A2773A018008EB9AD /* DetayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +69,9 @@
 				7C79FB81277386E1008EB9AD /* SceneDelegate.swift */,
 				7C79FB83277386E1008EB9AD /* ViewController.swift */,
 				7C79FB9627738D5A008EB9AD /* FilmlerCollectionViewCell.swift */,
+				7C79FB9827739B3D008EB9AD /* Protocols.swift */,
 				7C79FB85277386E1008EB9AD /* Main.storyboard */,
+				7C79FB9A2773A018008EB9AD /* DetayVC.swift */,
 				7C79FB88277386E5008EB9AD /* Assets.xcassets */,
 				7C79FB8A277386E5008EB9AD /* LaunchScreen.storyboard */,
 				7C79FB8D277386E5008EB9AD /* Info.plist */,
@@ -155,6 +161,8 @@
 				7C79FB84277386E1008EB9AD /* ViewController.swift in Sources */,
 				7C79FB80277386E1008EB9AD /* AppDelegate.swift in Sources */,
 				7C79FB82277386E1008EB9AD /* SceneDelegate.swift in Sources */,
+				7C79FB9927739B3D008EB9AD /* Protocols.swift in Sources */,
+				7C79FB9B2773A018008EB9AD /* DetayVC.swift in Sources */,
 				7C79FB9727738D5A008EB9AD /* FilmlerCollectionViewCell.swift in Sources */,
 				7C79FB94277387A6008EB9AD /* Filmler.swift in Sources */,
 			);

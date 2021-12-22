@@ -97,6 +97,7 @@
                     <navigationItem key="navigationItem" title="Filmler" id="taJ-Rr-wOh"/>
                     <connections>
                         <outlet property="filmlerCollectionView" destination="IiZ-w8-73o" id="ZBQ-CG-Bjx"/>
+                        <segue destination="Zke-9k-rLS" kind="presentation" identifier="toDetay" id="f58-3N-tHs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -119,7 +120,77 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yg7-ao-YBO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="71.651785714285708"/>
+            <point key="canvasLocation" x="184" y="72"/>
+        </scene>
+        <!--DetayVC-->
+        <scene sceneID="1yz-SX-cPG">
+            <objects>
+                <viewController id="Zke-9k-rLS" customClass="DetayVC" customModule="DetayliCollectionViewKullanimi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zon-Gw-aW6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Django" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUm-zA-JQq">
+                                <rect key="frame" x="125" y="50" width="164" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="django" translatesAutoresizingMaskIntoConstraints="NO" id="l3R-gm-udE">
+                                <rect key="frame" x="107" y="258" width="200" height="300"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quentin Tarantino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xW-57-54S">
+                                <rect key="frame" x="47" y="160" width="320" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15.99 ₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coc-9e-lFv">
+                                <rect key="frame" x="144.5" y="608" width="125" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiI-w4-yPk">
+                                <rect key="frame" x="32" y="709.5" width="350" height="48.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="SEPETE EKLE">
+                                    <backgroundConfiguration key="background"/>
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGray2Color"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sepeteEkleButton:" destination="Zke-9k-rLS" eventType="touchUpInside" id="SmQ-fA-UYK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fdL-Qq-Uem"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l3R-gm-udE" firstAttribute="centerX" secondItem="zon-Gw-aW6" secondAttribute="centerX" id="De6-YM-34E"/>
+                            <constraint firstItem="zUm-zA-JQq" firstAttribute="top" secondItem="fdL-Qq-Uem" secondAttribute="top" constant="50" id="OdG-Sq-vl9"/>
+                            <constraint firstItem="zUm-zA-JQq" firstAttribute="centerX" secondItem="zon-Gw-aW6" secondAttribute="centerX" id="S43-zk-Zzp"/>
+                            <constraint firstItem="fdL-Qq-Uem" firstAttribute="bottom" secondItem="wiI-w4-yPk" secondAttribute="bottom" constant="50" id="Vhe-iq-IN7"/>
+                            <constraint firstItem="fdL-Qq-Uem" firstAttribute="trailing" secondItem="wiI-w4-yPk" secondAttribute="trailing" constant="32" id="YVl-Vl-PYJ"/>
+                            <constraint firstItem="wiI-w4-yPk" firstAttribute="leading" secondItem="fdL-Qq-Uem" secondAttribute="leading" constant="32" id="ccL-AU-9IL"/>
+                            <constraint firstItem="7xW-57-54S" firstAttribute="top" secondItem="zUm-zA-JQq" secondAttribute="bottom" constant="50" id="fwW-2v-r7J"/>
+                            <constraint firstItem="7xW-57-54S" firstAttribute="centerX" secondItem="zon-Gw-aW6" secondAttribute="centerX" id="ggh-Oj-aG9"/>
+                            <constraint firstItem="coc-9e-lFv" firstAttribute="centerX" secondItem="zon-Gw-aW6" secondAttribute="centerX" id="mzi-kY-YbW"/>
+                            <constraint firstItem="l3R-gm-udE" firstAttribute="top" secondItem="7xW-57-54S" secondAttribute="bottom" constant="50" id="teJ-Zs-i9F"/>
+                            <constraint firstItem="coc-9e-lFv" firstAttribute="top" secondItem="l3R-gm-udE" secondAttribute="bottom" constant="50" id="yVy-GA-MHm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jss-q1-UuS"/>
+                    <connections>
+                        <outlet property="filmAdiLabel" destination="zUm-zA-JQq" id="7bE-6x-DSf"/>
+                        <outlet property="filmFiyatLabel" destination="coc-9e-lFv" id="G9Z-Xg-d14"/>
+                        <outlet property="filmImageView" destination="l3R-gm-udE" id="T6S-NC-q4n"/>
+                        <outlet property="filmYonetmenAdiLabel" destination="7xW-57-54S" id="Dq9-Q7-X3Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OFl-Pn-CKB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1686.9565217391305" y="71.651785714285708"/>
         </scene>
     </scenes>
     <resources>
